@@ -4,6 +4,7 @@ import './App.css';
 import Button from './components/button.js';
 import Input from './components/input.js';
 import Title from './components/title.js';
+import Giphy from './components/giphy.js';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
         <Title/>
         <Button/> 
         <Input/>
+        <Giphy apiKey="dc6zaTOxFJmzC" keyword="cat"/>
       </div>
     );
   }
