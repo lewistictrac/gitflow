@@ -8,6 +8,20 @@ import Giphy from './components/giphy.js';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.handleGiphyKeywordChange = this.handleGiphyKeywordChange.bind(this);
+    this.state = {
+      giphyKeyword: 'dog'
+    };
+  }
+
+  handleGiphyKeywordChange(giphyKeyword) {
+    this.setState({
+      giphyKeyword: giphyKeyword
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -17,8 +31,8 @@ class App extends Component {
         </header>
         <Title/>
         <Button/> 
-        <Input/>
-        <Giphy apiKey="dc6zaTOxFJmzC" keyword="cat"/>
+        <Input value={this.state.giphyKeyword} onValueChange={this.handleGiphyKeywordChange}/>
+        <Giphy apiKey="dc6zaTOxFJmzC" keyword={this.state.giphyKeyword}/>
       </div>
     );
   }
