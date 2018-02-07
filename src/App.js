@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React - with hot fix</h1>
+          <h1 className="App-title">Welcome to React - with hot fix 1.3.1</h1>
         </header>
         <Title/>
         <Button/> 
