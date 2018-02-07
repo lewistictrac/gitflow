@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Title extends Component {
+class Pargraph extends Component {
   render() {
     return (
       <div className="Pargraph" >
@@ -11,4 +11,4 @@ class Title extends Component {
   }
 }
 
-export default Title;
+export default Pargraph;
